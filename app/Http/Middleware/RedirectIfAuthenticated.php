@@ -27,7 +27,7 @@ class RedirectIfAuthenticated
                 return redirect()->route('admin.home');
               }
             }
-        }
+        } 
 
         return $next($request);
     }
