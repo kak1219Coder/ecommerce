@@ -57,4 +57,15 @@ class AdminController extends Controller
         session()->flash('fail','You are logged out !');
         return redirect()->route('admin.login');
     }
+    public function send_mail(Request $request , $token=null)
+    {
+        //return "ok";
+
+       // $check_token = DB::table('password_reset_tokens')
+        //                  ->where(['token'=>$token, 'guard'=>constGuards::ADMIN])
+        //                  ->first();
+
+
+
+    }
 }
